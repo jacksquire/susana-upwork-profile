@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Susana H. — Upwork Profile Optimization</title>
+<style>
+  :root{
+    --ink:#15201c;
+    --ink-soft:#41534c;
+    --paper:#f6f4ee;
+    --card:#ffffff;
+    --line:#e2ddd2;
+    --accent:#1f6f5c;
+    --accent-soft:#e7f1ed;
+    --gold:#b8893b;
+    --red:#b4452f;
+    --red-soft:#fbecea;
+    --green-soft:#eaf3ee;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px;}
+  header.hero{
+    padding:64px 0 40px;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.16em;
+    font-size:.72rem;
+    font-weight:700;
+    color:var(--accent);
+    margin:0 0 14px;
+  }
+  h1{
+    font-size:2.5rem;
+    line-height:1.1;
+    margin:0 0 14px;
+    letter-spacing:-.02em;
+    font-weight:800;
+  }
+  .sub{font-size:1.12rem;color:var(--ink-soft);margin:0;max-width:640px;}
+  .stats{
+    display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;
+  }
+  .stat{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:10px 14px;
+    font-size:.85rem;
+  }
+  .stat b{display:block;font-size:1.15rem;color:var(--accent);}
+  main{padding:18px 0 80px;}
+  section{padding:38px 0;border-bottom:1px solid var(--line);}
+  section:last-child{border-bottom:none;}
+  h2{
+    font-size:1.55rem;letter-spacing:-.01em;margin:0 0 6px;font-weight:800;
+    display:flex;align-items:baseline;gap:12px;
+  }
+  h2 .num{
+    font-size:.85rem;color:var(--accent);font-weight:800;
+    background:var(--accent-soft);border-radius:6px;padding:2px 9px;
+    position:relative;top:-3px;
+  }
+  h3{font-size:1.08rem;margin:26px 0 8px;font-weight:700;}
+  p{margin:0 0 14px;}
+  .lead{font-size:1.08rem;color:var(--ink-soft);}
+  ul{margin:0 0 16px;padding-left:20px;}
+  li{margin:6px 0;}
+  .callout{
+    background:var(--gold);
+    background:linear-gradient(180deg,#fff8ec,#fdf1da);
+    border:1px solid #e9d3a3;
+    border-left:4px solid var(--gold);
+    border-radius:10px;
+    padding:18px 20px;
+    margin:22px 0;
+  }
+  .callout .label{
+    text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;
+    font-weight:800;color:var(--gold);margin-bottom:6px;
+  }
+  .callout p{margin:0;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0;}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr;}h1{font-size:2rem;}}
+  .panel{border-radius:12px;padding:18px 20px;border:1px solid var(--line);background:var(--card);}
+  .panel.good{background:var(--green-soft);border-color:#cfe3d6;}
+  .panel.bad{background:var(--red-soft);border-color:#f0d2cc;}
+  .panel h4{margin:0 0 10px;font-size:.95rem;text-transform:uppercase;letter-spacing:.08em;}
+  .panel.good h4{color:var(--accent);}
+  .panel.bad h4{color:var(--red);}
+  .panel ul{padding-left:18px;margin:0;}
+  .panel li{font-size:.92rem;}
+  .copyblock{
+    position:relative;
+    background:#11201b;
+    color:#eef3f0;
+    border-radius:12px;
+    padding:24px 22px 22px;
+    margin:16px 0;
+    font-size:.95rem;
+    line-height:1.7;
+    white-space:pre-wrap;
+    font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+  }
+  .copyblock .ph{
+    background:rgba(184,137,59,.28);
+    color:#f4d699;
+    border-radius:4px;
+    padding:1px 5px;
+    font-style:normal;
+  }
+  .tag{
+    display:inline-block;background:var(--accent-soft);color:var(--accent);
+    font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;
+    border-radius:6px;padding:3px 9px;margin-bottom:8px;
+  }
+  .headline-opt{
+    background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:14px 16px;margin:10px 0;font-size:1.02rem;
+  }
+  .headline-opt.rec{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent);}
+  .headline-opt .why{display:block;font-size:.85rem;color:var(--ink-soft);margin-top:6px;font-family:inherit;}
+  .checklist{list-style:none;padding-left:0;}
+  .checklist li{
+    background:var(--card);border:1px solid var(--line);border-radius:8px;
+    padding:11px 14px;margin:8px 0;padding-left:42px;position:relative;font-size:.95rem;
+  }
+  .checklist li:before{
+    content:"";position:absolute;left:14px;top:14px;width:15px;height:15px;
+    border:2px solid var(--accent);border-radius:4px;
+  }
+  .checklist li b{color:var(--ink);}
+  .toc{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 22px;margin:24px 0 0;
+  }
+  .toc ol{margin:0;padding-left:20px;}
+  .toc a{color:var(--accent);text-decoration:none;font-weight:600;}
+  .toc a:hover{text-decoration:underline;}
+  footer{padding:30px 0 60px;color:var(--ink-soft);font-size:.85rem;text-align:center;}
+  .small{font-size:.85rem;color:var(--ink-soft);}
+  .arrow{color:var(--gold);font-weight:800;}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Upwork Profile Optimization &middot; Direct-Response Rewrite</p>
+    <h1>Susana H. — Bilingual MD</h1>
+    <p class="sub">A repositioning of an underpriced physician's Upwork profile: leading with high-demand medical AI evaluation, anchored by EN-ES medical translation. Built on direct-response copy principles.</p>
+    <div class="stats">
+      <div class="stat"><b>100%</b>Job Success</div>
+      <div class="stat"><b>$50K+</b>Total earned</div>
+      <div class="stat"><b>2,723</b>Hours billed</div>
+      <div class="stat"><b>$30/hr</b>Current rate</div>
+    </div>
+    <div class="toc">
+      <strong>On this page</strong>
+      <ol>
+        <li><a href="#opportunity">The core opportunity</a></li>
+        <li><a href="#bestpractice">Upwork best practices</a></li>
+        <li><a href="#feedback">Feedback on the current profile</a></li>
+        <li><a href="#headline">Recommended headline</a></li>
+        <li><a href="#overview">Recommended overview (copy-paste)</a></li>
+        <li><a href="#gather">What to get from Susana</a></li>
+        <li><a href="#next">Next steps &amp; the rate path</a></li>
+      </ol>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="opportunity">
+  <h2><span class="num">01</span> The core opportunity</h2>
+  <p class="lead">Susana is a licensed physician doing work that very few people on Upwork can do, priced like a generalist.</p>
+  <p>The headline insight: <b>a licensed MD evaluating AI-generated medical content is one of the highest-demand, highest-paying skills on Upwork right now.</b> AI companies need clinicians to check model output for accuracy, safety, and hallucinations (RLHF, red-teaming, medical QA). Most "AI content reviewers" are linguists or generalists. Susana is an actual doctor, licensed in two countries, who works daily in ChatGPT, Claude, and Heidi. That is a rare and valuable combination.</p>
+  <p>Her stats back this up: <b>$50K+ earned across 2,723 hours</b>, almost certainly from a substantial AI-evaluation or clinical-data contract, not the $20 sentence-recording and $5 virtual-assistant gigs showing in her public work history. Those visible jobs <i>undersell</i> her badly, so the written profile has to carry the weight her job list doesn't.</p>
+  <div class="callout">
+    <div class="label">The strategic call</div>
+    <p>Keep the <b>$30/hr rate for now</b> (per your direction) but rewrite the profile to lead with the premium skill. At $30/hr, a real physician doing medical AI evaluation is an obvious steal, so she wins contracts fast. As that work fills her visible history, raising the rate to $60-90/hr becomes easy and defensible. The copy below is built to attract the higher-paying client even while the rate stays low.</p>
+  </div>
+</section>
+
+<section id="bestpractice">
+  <h2><span class="num">02</span> Upwork best practices that shaped this rewrite</h2>
+  <ul>
+    <li><b>The first two lines are the whole game.</b> Upwork shows only the opening of your overview in search results and previews. It must hook a skimming buyer with an outcome, not open with a r&eacute;sum&eacute; summary.</li>
+    <li><b>Specialize, don't list.</b> Upwork's matching algorithm and buyer trust both reward a sharp niche. "I do five things" reads as generalist. Lead with one hero skill; let the rest support it.</li>
+    <li><b>Specific proof beats adjectives.</b> "Evaluated 5,000+ AI medical responses" persuades; "high-quality work" does not. Numbers, domains, and volumes are what justify a hire.</li>
+    <li><b>Sell the outcome, not the task.</b> Buyers don't want "translation," they want "medical meaning that survives the language change." Frame around what they get.</li>
+    <li><b>Make the next step obvious.</b> End with a simple instruction on how to start and what to include in a message. Lower the friction to reach out.</li>
+    <li><b>Match the audience's register.</b> Medical and AI-company buyers respond to calm credibility, not hype or heavy emoji. Confidence, precision, restraint.</li>
+  </ul>
+</section>
+
+<section id="feedback">
+  <h2><span class="num">03</span> Feedback on the current profile</h2>
+  <p>The current profile is competent and clean. It reads like a careful CV, which is exactly the ceiling we want to break through.</p>
+  <div class="grid2">
+    <div class="panel good">
+      <h4>What's working</h4>
+      <ul>
+        <li>Strong, rare credential: MD licensed in <b>two</b> countries.</li>
+        <li>Clear differentiator stated: clinical expertise + bilingual.</li>
+        <li>Names real tools (Heidi, ChatGPT, Claude) — signals she's AI-fluent.</li>
+        <li>Clean services list; no typos or fluff.</li>
+        <li>Excellent underlying stats (100% JSS, $50K+, 2,723 hrs).</li>
+      </ul>
+    </div>
+    <div class="panel bad">
+      <h4>What's holding it back</h4>
+      <ul>
+        <li><b>Opens with credentials, not a hook.</b> The searchable preview is a CV summary, not a reason to keep reading.</li>
+        <li><b>The hero skill is buried.</b> AI medical evaluation is listed third, when it's her most valuable and in-demand offer.</li>
+        <li><b>Zero specificity.</b> No volumes, domains, or named results anywhere.</li>
+        <li><b>Underpriced and the copy reinforces it</b> — reads "safe generalist," not "scarce specialist."</li>
+        <li><b>No clear call to action</b> or instruction on how to start a conversation.</li>
+        <li>Slightly generic phrasing ("ensure accuracy, clarity, and reliability") that any applicant could write.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="headline">
+  <h2><span class="num">04</span> Recommended headline</h2>
+  <p class="small">Current: <i>Bilingual MD | Medical Translation &amp; QA | English - Spanish</i></p>
+  <div class="headline-opt rec">
+    <span class="tag">Recommended</span><br>
+    Bilingual MD | Medical AI Evaluation &amp; QA + EN-ES Medical Translation
+    <span class="why">Leads with the scarce, high-paying skill while keeping the MD credential and translation pillar. "MD" up front is her moat.</span>
+  </div>
+  <div class="headline-opt">
+    MD (Mexico &amp; Colombia) | Medical AI Reviewer + EN-ES Medical Translator
+    <span class="why">Foregrounds the two-country license as proof. Strong if she wants the credential to do the lifting.</span>
+  </div>
+  <div class="headline-opt">
+    Physician Reviewing Medical AI for Accuracy &amp; Safety | EN-ES Translation
+    <span class="why">Most outcome-driven; speaks directly to AI-company buyers searching for clinical reviewers.</span>
+  </div>
+</section>
+
+<section id="overview">
+  <h2><span class="num">05</span> Recommended overview</h2>
+  <p>Direct-response structure: hook with contrast, establish the rare credential, sell the outcome, prove it, then make the next step easy. <span class="arrow">Highlighted</span> spots are placeholders for the real numbers you'll gather in section 6.</p>
+  <div class="copyblock">Most people reviewing medical AI content aren't doctors. I am.
+
+I'm a physician licensed in Mexico and Colombia, and I help AI teams, healthcare companies, and clinical publishers make sure their medical content is accurate, safe, and clinically sound, in both English and Spanish.
+
+I review AI-generated medical output the way a clinician reads a chart: line by line, for accuracy, clarity, and patient safety. I catch the errors a linguist or a generalist reviewer misses, the ones that actually matter to a patient. I also translate complex medical documents between English and Spanish without losing clinical meaning.
+
+What you get when you hire me:
+- A real clinical lens. Not "someone who knows health words." A physician who has treated patients.
+- Bilingual precision. Native Spanish, fluent English, and the medical vocabulary to move accurately between them.
+- AI-fluent workflow. I work daily in tools like Heidi, ChatGPT, and Claude, so I understand both the medicine and the model.
+
+Where I help most:
+- Medical AI output evaluation, RLHF, and red-teaming (accuracy, safety, and hallucination checks)
+- EN-ES medical translation (clinical documents, trial material, patient-facing content)
+- Clinical content review, medical writing, and editing
+- Patient-facing and professional medical content refinement
+
+A bit of proof:
+- <span class="ph">[Evaluated 5,000+ AI-generated medical responses for a healthcare AI company]</span>
+- <span class="ph">[Translated oncology / cardiology / [specialty] documentation, EN to ES]</span>
+- 100% Job Success and 2,700+ hours on Upwork, with a perfect client rating
+
+How to start:
+Send me a short note with the type of content, the rough volume, and your deadline. If it's medical and it has to be right, that's exactly my lane, and I'll tell you honestly whether I'm the right fit.</div>
+  <p class="small">Notes: emoji intentionally omitted to match the calm-credibility register medical and AI buyers respond to. No em dashes used. Keep paragraphs short for Upwork's narrow column.</p>
+</section>
+
+<section id="gather">
+  <h2><span class="num">06</span> What to get from Susana</h2>
+  <p>You said you can get specifics. These are the exact inputs that will turn the placeholders into real persuasion. NDA-safe descriptions are fine ("a healthcare AI company" instead of a name).</p>
+  <ul class="checklist">
+    <li><b>The big contract.</b> What generated most of the $50K / 2,723 hours? Company type, what she did, and rough volume.</li>
+    <li><b>AI evaluation volume.</b> Approx. how many medical AI outputs / responses / prompts has she reviewed?</li>
+    <li><b>Translation specifics.</b> Which document types and medical specialties (oncology, cardiology, trials, patient materials)? Rough word count or number of documents.</li>
+    <li><b>Therapeutic depth.</b> Any specialties she's strongest in (ties to her primary care / population health / integrative medicine background).</li>
+    <li><b>Tools and platforms.</b> Beyond Heidi/ChatGPT/Claude — any data-labeling or eval platforms (Scale, Outlier, Labelbox, etc.)?</li>
+    <li><b>Credentials.</b> Medical translation certification? ECFMG? Any language proficiency certificates?</li>
+    <li><b>Languages.</b> Confirm EN-ES only, or is Portuguese / another language in play?</li>
+    <li><b>Turnaround.</b> What delivery speed can she reliably commit to?</li>
+    <li><b>Specialized Profile.</b> Worth creating a dedicated Upwork "Specialized Profile" for medical AI evaluation to rank for that niche separately.</li>
+  </ul>
+</section>
+
+<section id="next">
+  <h2><span class="num">07</span> Next steps &amp; the rate path</h2>
+  <ol>
+    <li><b>Gather the proof</b> in section 6 and drop the real numbers into the two placeholders.</li>
+    <li><b>Update the headline</b> to the recommended version and paste the new overview.</li>
+    <li><b>Set up a Specialized Profile</b> for medical AI evaluation so she surfaces for that high-value search.</li>
+    <li><b>Hold $30/hr for ~3-5 new contracts</b> to fill the visible work history with relevant, well-reviewed jobs.</li>
+    <li><b>Then raise the rate to $60-90/hr.</b> With a physician credential, named volumes, and a wall of medical AI reviews, that rate is easy to defend, and it's roughly the market rate for clinician AI evaluators. The current $30/hr is the single biggest lever left on the table.</li>
+  </ol>
+  <div class="callout">
+    <div class="label">Bottom line</div>
+    <p>The profile doesn't need more words. It needs to lead with the scarce skill, prove it with real numbers, and stop pricing a physician like a generalist. The copy above does the first two now; the proof and the rate are the follow-through.</p>
+  </div>
+</section>
+
+</main>
+<footer class="wrap">
+  Prepared for Susana H. &middot; Direct-response rewrite &middot; Rate, proof, and final copy to be confirmed before going live.
+</footer>
+</body>
+</html>
